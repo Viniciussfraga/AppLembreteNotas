@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FP1hWpZbTKSiPRoQOKHB7MiKyEn8et/KX52lu393UMjYKf/D7mtZ6xx8KGDIkkMpYFnH0en9f9iMfDLhDEOPYg==",
+  "dgSpecHash": "VzgWP6zY8lS9XRefkkZBIc+JdxALlWUni7zQ5Lu1LV/6M/rl7QRhqAs8gG2Ywswcb1ptfjEVj6/+uVc7QLNBiQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe.UWP\\EsqueciMe.UWP.csproj",
+  "projectFilePath": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\AppLembreteNotas\\EsqueciMe\\EsqueciMe\\EsqueciMe.UWP\\EsqueciMe.UWP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vinix\\.nuget\\packages\\microsoft.net.native.compiler\\2.2.10-rel-29722-00\\microsoft.net.native.compiler.2.2.10-rel-29722-00.nupkg.sha512",
     "C:\\Users\\vinix\\.nuget\\packages\\microsoft.net.uwpcoreruntimesdk\\2.2.12\\microsoft.net.uwpcoreruntimesdk.2.2.12.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f6AOrDdiicd0MGcXeZy3Z8oylCdHTsOZj4QzPwXvrMi4Uce2KaVqV3Wb+zZsC2P5XUo2XOt7uBEEFHNkkqV2Cg==",
+  "dgSpecHash": "N2cc/scAG9eqOg0RPwP+hVhb8NopUZqqWnCsevwsTKpIZxlfAXcCr5gZ7q8k47kC3jmauNHrMclIk+9LfIJang==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe.iOS\\EsqueciMe.iOS.csproj",
+  "projectFilePath": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\AppLembreteNotas\\EsqueciMe\\EsqueciMe\\EsqueciMe.iOS\\EsqueciMe.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vinix\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\vinix\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EsqueciMe.Models;
+using EsqueciMe.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,40 @@ namespace EsqueciMe.Views {
         public PageCadastrar()
         {
             InitializeComponent();
+        }
+      private void btSalvar_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                ModelNotas nota = new ModelNotas();
+                nota.Titulo = entryTitulo.Text;
+                nota.Dados = editorDados.Text;
+                nota.Favorito = swFavorito.IsToggled;
+
+                ServicesDBNotas dBNotas = new ServicesDBNotas(App.DbPath);
+
+                if (btSalvar.Text == "Inserir")
+                {
+                    dBNotas.Inserir(nota);
+                    DisplayAlert("Resultado da operação: ", dBNotas.StatusMessage, "OK");
+                }
+                else
+                {
+
+                }
+                FlyoutPage p = Application.Current.MainPage as FlyoutPage;
+                p.Detail = new PageHome();
+            }
+            catch(Exception ex)
+            {
+                DisplayAlert("Erro: ", ex.Message, "OK");
+            }
+            
+        }
+        private void btCancelar_Clicked(object sender, EventArgs e)
+        {
+            FlyoutPage p = Application.Current.MainPage as FlyoutPage;
+            p.Detail = new PageHome();
         }
     }
 }

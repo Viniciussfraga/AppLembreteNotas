@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xOD/Xb2KCNJswXfrmItxubp5a9J0DAM7GmmEbuDPx/wSLY8IhazV7MmmjeZu1uJ7TgE5qzEmhh4p9UQPz/PBEg==",
+  "dgSpecHash": "7U6ae5OpQimEx+dI9bdZ+scYoOsubPDZvBZXH6KJg/n3votUtx2wzqGauNA56lH3Ej2I5ZnRB73BZ7opk4V1Lg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe.csproj",
+  "projectFilePath": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\AppLembreteNotas\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vinix\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\vinix\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

@@ -1593,11 +1593,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe.iOS\\EsqueciMe.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\AppLembreteNotas\\EsqueciMe\\EsqueciMe\\EsqueciMe.iOS\\EsqueciMe.iOS.csproj",
       "projectName": "EsqueciMe.iOS",
-      "projectPath": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe.iOS\\EsqueciMe.iOS.csproj",
+      "projectPath": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\AppLembreteNotas\\EsqueciMe\\EsqueciMe\\EsqueciMe.iOS\\EsqueciMe.iOS.csproj",
       "packagesPath": "C:\\Users\\vinix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe.iOS\\obj\\",
+      "outputPath": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\AppLembreteNotas\\EsqueciMe\\EsqueciMe\\EsqueciMe.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1618,8 +1618,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe.csproj": {
-              "projectPath": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe.csproj"
+            "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\AppLembreteNotas\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe.csproj": {
+              "projectPath": "C:\\Users\\vinix\\Documents\\Curso Xamarin 2\\EsqueciMe\\AppLembreteNotas\\EsqueciMe\\EsqueciMe\\EsqueciMe\\EsqueciMe.csproj"
             }
           }
         }

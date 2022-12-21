@@ -4,11 +4,31 @@
              x:Class="EsqueciMe.Views.PageCadastrar" Title="Cadastro e alteração de notas">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Cadastro e alteração de notas"
-                   FontSize="Large"
-                   FontAttributes="Bold"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="entryTitulo" 
+                   Keyboard="Plain" 
+                   Placeholder="Título da nota"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Nota favorita:" FontSize="Medium"/>
+                <Switch x:Name="swFavorito" HorizontalOptions="Start"/>
+            </StackLayout>
+
+            <Editor x:Name="editorDados" 
+                    Keyboard="Plain" 
+                    Placeholder="Dados da nota" 
+                    VerticalOptions="FillAndExpand"
+                    Margin="20"/>
+
+            <StackLayout Orientation="Horizontal" Margin="20,0,20,20">
+                <Button x:Name="btSalvar" 
+                    Text="Inserir" 
+                    Clicked="btSalvar_Clicked"
+                    HorizontalOptions="FillAndExpand"/>
+                <Button x:Name="btCancelar" 
+                    Text="Cancelar"
+                    Clicked="btCancelar_Clicked"
+                    HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

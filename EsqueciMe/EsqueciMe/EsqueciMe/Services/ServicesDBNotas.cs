@@ -80,7 +80,6 @@ namespace EsqueciMe.Services {
                 throw new Exception(string.Format("Erro: {0}", ex.Message));
             }
         }
-
         public void Excluir(int id)
         {
             try
@@ -93,7 +92,44 @@ namespace EsqueciMe.Services {
                 throw new Exception(string.Format("Erro: {0}", ex.Message));
             }
         }
+        public List<ModelNotas> Localizar(string title)
+        {
+            List<ModelNotas> list = new List<ModelNotas>();
+            try
+            {
+                var resp = from p in conn.Table<ModelNotas>() 
+                           where p.Titulo.ToLower().Contains(title.ToLower()) 
+                           select p;
+                list = resp.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(string.Format("Erro: {0}", ex.Message));
+            }
 
+            return list;
+        }
+        public ModelNotas GetNota(int id) 
+        {
+            ModelNotas m = new ModelNotas();
+            try
+            {
+                if(id <= 0)
+                    throw new Exception("Id da nota inválido");
+
+                m = conn.Table<ModelNotas>().First(x => x.Id == id);
+
+                if(m == null)
+                    throw new Exception("Nota não encontrada");
+
+                
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(string.Format("Erro: {0}", ex.Message));
+            }
+            return m;
+        }
         #endregion
     }
 }

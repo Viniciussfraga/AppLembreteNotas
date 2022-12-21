@@ -19,6 +19,7 @@ namespace EsqueciMe.Views {
         }
         public void InserirItens()
         {
+          
             ModelNotas nota = new ModelNotas();
             nota.Titulo = "Teste: " + DateTime.Now.ToString();
             nota.Dados = "Será que funciona de primeira?";
