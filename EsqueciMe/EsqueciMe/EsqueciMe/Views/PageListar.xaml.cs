@@ -17,28 +17,18 @@ namespace EsqueciMe.Views {
             InitializeComponent();
             AtualizaLista();
         }
-        public void InserirItens()
-        {
-          
-            ModelNotas nota = new ModelNotas();
-            nota.Titulo = "Teste: " + DateTime.Now.ToString();
-            nota.Dados = "Será que funciona de primeira?";
-            nota.Favorito = false;
-
-            ServicesDBNotas dBNotas = new ServicesDBNotas(App.DbPath);
-            dBNotas.Inserir(nota);
-            DisplayAlert("Resultado da operação: ", dBNotas.StatusMessage, "OK");
-        }
-
         public void AtualizaLista()
         {
             ServicesDBNotas dBNotas = new ServicesDBNotas(App.DbPath);
             ListaNotas.ItemsSource = dBNotas.ListarNotas();
         }
-        private void Button_Clicked(object sender, EventArgs e)
+
+        private void ListaNotas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            InserirItens();
-            AtualizaLista();
+            ModelNotas nota = ListaNotas.SelectedItem as ModelNotas;
+            //Chamada da page cadastrar
+            FlyoutPage p = Application.Current.MainPage as FlyoutPage;
+            p.Detail = new PageCadastrar(nota);
         }
     }
 }

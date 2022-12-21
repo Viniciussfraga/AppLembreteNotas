@@ -7,14 +7,13 @@
             <ListView x:Name="ListaNotas" 
                       HasUnevenRows="True" 
                       SeparatorColor="Red" 
-                      Margin="15">
+                      Margin="15"
+                      ItemSelected="ListaNotas_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout>
-                                <Label Text="{Binding Id,StringFormat='Código: {0}'}" />
                                 <Label Text="{Binding Titulo,StringFormat='Título: {0}'}" />
-                                <Label Text="{Binding Dados,StringFormat='Dados: {0}'}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

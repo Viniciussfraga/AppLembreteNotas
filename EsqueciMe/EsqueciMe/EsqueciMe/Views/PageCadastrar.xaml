@@ -4,6 +4,7 @@
              x:Class="EsqueciMe.Views.PageCadastrar" Title="Cadastro e alteração de notas">
     <ContentPage.Content>
         <StackLayout>
+            <Entry x:Name="entryCodigo" IsVisible="False" IsEnabled="False" />
             <Entry x:Name="entryTitulo" 
                    Keyboard="Plain" 
                    Placeholder="Título da nota"/>

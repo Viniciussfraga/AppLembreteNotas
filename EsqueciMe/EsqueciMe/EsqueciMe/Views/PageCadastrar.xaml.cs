@@ -16,7 +16,18 @@ namespace EsqueciMe.Views {
         {
             InitializeComponent();
         }
-      private void btSalvar_Clicked(object sender, EventArgs e)
+        public PageCadastrar(ModelNotas nota)
+        {
+            InitializeComponent();
+            btSalvar.Text = "Alterar";
+            entryCodigo.IsVisible = true;
+
+            entryCodigo.Text = nota.Id.ToString();
+            entryTitulo.Text = nota.Titulo;
+            editorDados.Text = nota.Dados;
+            swFavorito.IsToggled = nota.Favorito;
+        }
+        private void btSalvar_Clicked(object sender, EventArgs e)
         {
             try
             {
