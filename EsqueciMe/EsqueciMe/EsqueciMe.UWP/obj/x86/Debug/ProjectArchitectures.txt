@@ -1,0 +1,1 @@
+C:\Users\vinix\Documents\Curso Xamarin 2\EsqueciMe\EsqueciMe\EsqueciMe\EsqueciMe.UWP\EsqueciMe.UWP.csproj;x86
