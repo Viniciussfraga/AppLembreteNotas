@@ -12,6 +12,7 @@ using Xamarin.Forms.Xaml;
 namespace EsqueciMe.Views {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PageCadastrar : ContentPage {
+        #region Construtores
         public PageCadastrar()
         {
             InitializeComponent();
@@ -26,7 +27,11 @@ namespace EsqueciMe.Views {
             entryTitulo.Text = nota.Titulo;
             editorDados.Text = nota.Dados;
             swFavorito.IsToggled = nota.Favorito;
+            btExcluir.IsVisible = true;
         }
+        #endregion
+
+        #region Métodos
         private void btSalvar_Clicked(object sender, EventArgs e)
         {
             try
@@ -45,7 +50,9 @@ namespace EsqueciMe.Views {
                 }
                 else
                 {
-
+                    nota.Id = Convert.ToInt32(entryCodigo.Text);
+                    dBNotas.Alterar(nota);
+                    DisplayAlert("Resultado da operação", dBNotas.StatusMessage, "OK");
                 }
                 FlyoutPage p = Application.Current.MainPage as FlyoutPage;
                 p.Detail = new PageHome();
@@ -61,5 +68,20 @@ namespace EsqueciMe.Views {
             FlyoutPage p = Application.Current.MainPage as FlyoutPage;
             p.Detail = new PageHome();
         }
+
+        private async void btExcluir_Clicked(object sender, EventArgs e)
+        {
+            var resp = await DisplayAlert("Excluir Registro", "Deseja excluir a nota atual?", "Sim", "Não");
+            if (resp)
+            {
+                ServicesDBNotas dBNotas = new ServicesDBNotas(App.DbPath);
+                int id = Convert.ToInt32(entryCodigo.Text);
+                dBNotas.Excluir(id);
+                await DisplayAlert("Resultado da operação", dBNotas.StatusMessage, "OK");
+                FlyoutPage p = Application.Current.MainPage as FlyoutPage;
+                p.Detail = new PageHome();
+            }
+        }
+        #endregion
     }
 }
