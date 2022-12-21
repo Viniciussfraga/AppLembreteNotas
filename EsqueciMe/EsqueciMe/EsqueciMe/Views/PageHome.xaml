@@ -4,6 +4,7 @@
              x:Class="EsqueciMe.Views.PageHome" Title="Home">
     <ContentPage.Content>
         <StackLayout>
+            <Image Source="esqueci1.png" />
             <Label Text="Página Home"
                    FontAttributes="Bold"
                    FontSize="Large"

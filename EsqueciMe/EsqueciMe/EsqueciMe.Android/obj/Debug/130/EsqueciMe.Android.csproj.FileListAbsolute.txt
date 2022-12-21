@@ -1280,3 +1280,11 @@ C:\Users\vinix\Documents\Curso Xamarin 2\EsqueciMe\AppLembreteNotas\EsqueciMe\Es
 C:\Users\vinix\Documents\Curso Xamarin 2\EsqueciMe\AppLembreteNotas\EsqueciMe\EsqueciMe\EsqueciMe.Android\obj\Debug\130\stamp\_GenerateJavaStubs.stamp
 C:\Users\vinix\Documents\Curso Xamarin 2\EsqueciMe\AppLembreteNotas\EsqueciMe\EsqueciMe\EsqueciMe.Android\obj\Debug\130\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\vinix\Documents\Curso Xamarin 2\EsqueciMe\AppLembreteNotas\EsqueciMe\EsqueciMe\EsqueciMe.Android\obj\Debug\130\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\vinix\Documents\Curso Xamarin 2\EsqueciMe\AppLembreteNotas\EsqueciMe\EsqueciMe\EsqueciMe.Android\obj\Debug\130\res\drawable\esqueci1.png
+C:\Users\vinix\Documents\Curso Xamarin 2\EsqueciMe\AppLembreteNotas\EsqueciMe\EsqueciMe\EsqueciMe.Android\obj\Debug\130\res\drawable\esqueci2.png
+C:\Users\vinix\Documents\Curso Xamarin 2\EsqueciMe\AppLembreteNotas\EsqueciMe\EsqueciMe\EsqueciMe.Android\obj\Debug\130\res\drawable\info.png
+C:\Users\vinix\Documents\Curso Xamarin 2\EsqueciMe\AppLembreteNotas\EsqueciMe\EsqueciMe\EsqueciMe.Android\obj\Debug\130\res\drawable\info2.png
+C:\Users\vinix\Documents\Curso Xamarin 2\EsqueciMe\AppLembreteNotas\EsqueciMe\EsqueciMe\EsqueciMe.Android\obj\Debug\130\res\drawable\inserir.png
+C:\Users\vinix\Documents\Curso Xamarin 2\EsqueciMe\AppLembreteNotas\EsqueciMe\EsqueciMe\EsqueciMe.Android\obj\Debug\130\res\drawable\localizar.png
+C:\Users\vinix\Documents\Curso Xamarin 2\EsqueciMe\AppLembreteNotas\EsqueciMe\EsqueciMe\EsqueciMe.Android\obj\Debug\130\res\drawable\deletar.png
+C:\Users\vinix\Documents\Curso Xamarin 2\EsqueciMe\AppLembreteNotas\EsqueciMe\EsqueciMe\EsqueciMe.Android\obj\Debug\130\res\drawable\editar.png

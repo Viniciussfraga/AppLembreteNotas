@@ -3,12 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EsqueciMe.Views.PageSobre" Title="Sobre">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Sobre"
-                   FontSize="Large"
+        <StackLayout Orientation="Horizontal" Margin="20">
+            <Image Source="esqueci1.png" Aspect="AspectFit"/>
+            <StackLayout Margin="10">
+                <Label Text="Dados do aplicativo" 
+                       FontSize="Large" 
+                       FontAttributes="Bold"
+                       VerticalOptions="EndAndExpand"/>
+
+                <Label Text="Nome do app: App Esqueci"
+                   FontSize="Medium"
                    FontAttributes="Bold"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start"/>
+
+                <Label Text="Descrição do projeto: Projeto desenvolvivo como parte do curso Xamarin"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start"/>
+
+                <Label Text="Autor: Vinicius Fraga"
+                   FontSize="Medium"
+                   FontAttributes="Bold"
+                   VerticalOptions="StartAndExpand"
+                   HorizontalOptions="Start"/>
+            </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -28,7 +28,7 @@ namespace EsqueciMe.Views {
             ModelNotas nota = ListaNotas.SelectedItem as ModelNotas;
             //Chamada da page cadastrar
             FlyoutPage p = Application.Current.MainPage as FlyoutPage;
-            p.Detail = new PageCadastrar(nota);
+            p.Detail = new NavigationPage(new PageCadastrar(nota));
         }
     }
 }

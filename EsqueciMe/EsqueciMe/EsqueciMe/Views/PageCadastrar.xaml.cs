@@ -55,7 +55,7 @@ namespace EsqueciMe.Views {
                     DisplayAlert("Resultado da operação", dBNotas.StatusMessage, "OK");
                 }
                 FlyoutPage p = Application.Current.MainPage as FlyoutPage;
-                p.Detail = new PageHome();
+                p.Detail = new NavigationPage(new PageHome());
             }
             catch(Exception ex)
             {
@@ -66,7 +66,7 @@ namespace EsqueciMe.Views {
         private void btCancelar_Clicked(object sender, EventArgs e)
         {
             FlyoutPage p = Application.Current.MainPage as FlyoutPage;
-            p.Detail = new PageHome();
+            p.Detail = new NavigationPage(new PageHome());
         }
 
         private async void btExcluir_Clicked(object sender, EventArgs e)
@@ -79,7 +79,7 @@ namespace EsqueciMe.Views {
                 dBNotas.Excluir(id);
                 await DisplayAlert("Resultado da operação", dBNotas.StatusMessage, "OK");
                 FlyoutPage p = Application.Current.MainPage as FlyoutPage;
-                p.Detail = new PageHome();
+                p.Detail = new NavigationPage(new PageHome());
             }
         }
         #endregion

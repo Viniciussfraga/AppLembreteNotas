@@ -5,10 +5,43 @@
     <FlyoutPage.Flyout>
         <ContentPage Title="Menu">
             <StackLayout>
-                <Button x:Name="btHome" Text="Home" Clicked="btHome_Clicked"/>
-                <Button x:Name="btCadastrar" Text="Cadastrar" Clicked="btCadastrar_Clicked"/>
-                <Button x:Name="btListar" Text="Listar" Clicked="btListar_Clicked"/>
-                <Button x:Name="btSobre" Text="Sobre" Clicked="btSobre_Clicked"/>
+
+                <Image Source="esqueci2.png" HorizontalOptions="Center"/>
+                <Label Text="Esqueci" FontSize="Large" HorizontalOptions="Center" Margin="0,0,0,50"/>
+                
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="info2.png" />
+                    <Button x:Name="btHome" 
+                            Text="Home" 
+                            Clicked="btHome_Clicked"
+                            HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="inserir.png" />
+                    <Button x:Name="btCadastrar" 
+                            Text="Cadastrar" 
+                            Clicked="btCadastrar_Clicked"
+                            HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+    
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="localizar.png" />
+                    <Button x:Name="btListar" 
+                            Text="Listar" 
+                            Clicked="btListar_Clicked"
+                            HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="info.png" />
+                    <Button x:Name="btSobre" 
+                            Text="Sobre" 
+                            Clicked="btSobre_Clicked"
+                            HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                    
             </StackLayout>
         </ContentPage>
     </FlyoutPage.Flyout>
