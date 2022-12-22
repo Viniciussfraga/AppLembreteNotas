@@ -14,5 +14,22 @@ namespace EsqueciMe.Views {
         {
             InitializeComponent();
         }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            //img inserir
+            FlyoutPage p = Application.Current.MainPage as FlyoutPage;
+            p.Detail = new NavigationPage(new PageCadastrar());
+            p.IsPresented = false;
+        }
+
+        private void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
+        {
+            //img localizar
+            FlyoutPage p = Application.Current.MainPage as FlyoutPage;
+            p.Detail = new NavigationPage(new PageListar());
+            p.IsPresented = false;
+        }
+
     }
 }

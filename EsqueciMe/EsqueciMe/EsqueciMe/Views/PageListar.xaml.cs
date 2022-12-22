@@ -20,7 +20,16 @@ namespace EsqueciMe.Views {
         public void AtualizaLista()
         {
             ServicesDBNotas dBNotas = new ServicesDBNotas(App.DbPath);
-            ListaNotas.ItemsSource = dBNotas.ListarNotas();
+            
+
+            if (swFavorito.IsToggled)
+            {
+                ListaNotas.ItemsSource = dBNotas.ListarFavoritos();
+            }
+            else
+            {
+                ListaNotas.ItemsSource = dBNotas.ListarNotas();
+            }
         }
 
         private void ListaNotas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
@@ -29,6 +38,11 @@ namespace EsqueciMe.Views {
             //Chamada da page cadastrar
             FlyoutPage p = Application.Current.MainPage as FlyoutPage;
             p.Detail = new NavigationPage(new PageCadastrar(nota));
+        }
+
+        private void swFavorito_Toggled(object sender, ToggledEventArgs e)
+        {
+            AtualizaLista();
         }
     }
 }

@@ -4,6 +4,12 @@
              x:Class="EsqueciMe.Views.PageListar" Title="Listar Notas">
     <ContentPage.Content>
         <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Exibir notas favoritas:" FontSize="Medium"/>
+                <Switch x:Name="swFavorito" 
+                    HorizontalOptions="Start"
+                    Toggled="swFavorito_Toggled"/>
+            </StackLayout>
             <ListView x:Name="ListaNotas" 
                       HasUnevenRows="True" 
                       SeparatorColor="Red" 
