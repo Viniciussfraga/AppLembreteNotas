@@ -19,19 +19,21 @@ namespace EsqueciMe.Views {
         }
         public void AtualizaLista()
         {
-            ServicesDBNotas dBNotas = new ServicesDBNotas(App.DbPath);
+            string titulo = "";
+
+            if (entryNota.Text != null) titulo= entryNota.Text;
             
+            ServicesDBNotas dBNotas = new ServicesDBNotas(App.DbPath);
 
             if (swFavorito.IsToggled)
             {
-                ListaNotas.ItemsSource = dBNotas.ListarFavoritos();
+                ListaNotas.ItemsSource = dBNotas.Localizar(titulo,true);
             }
             else
             {
-                ListaNotas.ItemsSource = dBNotas.ListarNotas();
+                ListaNotas.ItemsSource = dBNotas.Localizar(titulo);
             }
         }
-
         private void ListaNotas_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             ModelNotas nota = ListaNotas.SelectedItem as ModelNotas;
@@ -41,6 +43,11 @@ namespace EsqueciMe.Views {
         }
 
         private void swFavorito_Toggled(object sender, ToggledEventArgs e)
+        {
+            AtualizaLista();
+        }
+
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
             AtualizaLista();
         }

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\EsqueciMe",
+    "\\EsqueciMe\\EsqueciMe",
+    "\\EsqueciMe\\EsqueciMe\\Views"
   ],
-  "SelectedNode": "\\EsqueciMe.sln",
+  "SelectedNode": "\\EsqueciMe\\EsqueciMe\\Views\\PageListar.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

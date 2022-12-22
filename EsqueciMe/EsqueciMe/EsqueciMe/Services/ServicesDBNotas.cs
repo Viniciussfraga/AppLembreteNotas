@@ -97,8 +97,28 @@ namespace EsqueciMe.Services {
             List<ModelNotas> list = new List<ModelNotas>();
             try
             {
+
                 var resp = from p in conn.Table<ModelNotas>() 
                            where p.Titulo.ToLower().Contains(title.ToLower()) 
+                           select p;
+                list = resp.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(string.Format("Erro: {0}", ex.Message));
+            }
+
+            return list;
+        }
+        public List<ModelNotas> Localizar(string title, Boolean favorito)
+        {
+            List<ModelNotas> list = new List<ModelNotas>();
+            try
+            {
+
+                var resp = from p in conn.Table<ModelNotas>()
+                           where p.Titulo.ToLower().Contains(title.ToLower()) &&
+                           p.Favorito == favorito
                            select p;
                 list = resp.ToList();
             }
